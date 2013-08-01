@@ -1,2 +1,12 @@
+<form id="new_post">
+	<input type="text" name="title" id="new_post_title">
+	<input type="text_area" name="message" id="new_post_message">
+	<input type="submit" value="Add">
+</form>
+
 <p> Hellloooo isss it mee yooour looking for </p>
-<p> <%= @post %> </p>
+<ul>
+<% for post in @posts.models: %>
+	<li> <%= post.get('title') %> </li>
+<% end %>
+</ul>
