@@ -5,7 +5,7 @@ window.Poster =
   Routers: {}
   initialize: ->
   	new Poster.Routers.Posts()
-  	Backbone.history.start()
+  	Backbone.history.start(pushState: true)
 
 $(document).ready ->
   Poster.initialize()

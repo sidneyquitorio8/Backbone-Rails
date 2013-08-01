@@ -17,6 +17,8 @@ Poster::Application.routes.draw do
     resources :posts
   end
 
+  match '*path', to: 'main#index'
+
   # Sample resource route with options:
   #   resources :products do
   #     member do

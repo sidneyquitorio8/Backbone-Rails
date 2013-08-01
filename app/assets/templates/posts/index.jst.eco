@@ -5,8 +5,6 @@
 </form>
 
 <p> Hellloooo isss it mee yooour looking for </p>
-<ul>
-<% for post in @posts.models: %>
-	<li> <%= post.get('title') %> </li>
-<% end %>
+<ul id="posts_container">
+
 </ul>
