@@ -34,4 +34,7 @@ Poster::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  ENV['TWITTER_KEY'] = 'QoNJVvr4dN80hwkcI6a8OQ'
+  ENV['TWITTER_SECRET'] = 'MWDWoLeH9Qiyaj0QVoTEFFSGR3SFk4puF5Ki3WGI'
 end

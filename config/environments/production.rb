@@ -60,4 +60,8 @@ Poster::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  ENV['TWITTER_KEY'] = 'eopJ6q0wPPBSFVZjBwt3CQ'
+  ENV['TWITTER_SECRET'] = 'e5bJKWwC990944S2bUteODObiWxAoZfs5YNbb0wC4'
+  
 end
