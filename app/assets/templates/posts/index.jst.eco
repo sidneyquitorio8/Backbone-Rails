@@ -1,1 +1,2 @@
 <p> Hellloooo isss it mee yooour looking for </p>
+<p> <%= @post %> </p>
