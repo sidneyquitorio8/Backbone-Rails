@@ -1,1 +1,12 @@
-<%= @post %>
+<div class="page_container">
+	<h4> Submit a Posting <h4> <br>
+	<form id="new_post" class="row">
+		<div class="col-sm-4">
+			<input type="text" name="title" id="new_post_title">
+		</div>
+		<div class="col-sm-8">
+			<input type="textarea" name="message" id="new_post_message"> <br><br>
+			<input type="submit" value="Add">
+		</div>
+	</form>
+</div>

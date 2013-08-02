@@ -1,9 +1,9 @@
-	<div id="menu_bar" class="jumbotron menu_bar row">
+	<div id="menu_bar" class="row">
 		<div class="col-sm-2">
 			<button id="new_post" type="button" class="btn btn-default">Post</button>
 		</div>
-		<div class="col-offset-8 col-sm-2">
-			List
+		<div class="col-offset-9 col-sm-1">
+			<p id="list_p">List</p>
 		</div>
 	</div>
 
