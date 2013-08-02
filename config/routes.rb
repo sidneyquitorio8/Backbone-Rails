@@ -17,7 +17,7 @@ Poster::Application.routes.draw do
     resources :posts
   end
 
-  match '*path', to: 'main#index'
+  match '/auth/twitter/callback' => 'sessions#create'
 
   # Sample resource route with options:
   #   resources :products do
