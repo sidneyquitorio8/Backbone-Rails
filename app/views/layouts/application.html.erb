@@ -19,6 +19,14 @@
 </div>
 
 <div id="whole_container">
+	<div id="menu_bar" class="row">
+		<div class="col-sm-2">
+			<button onclick="window.location.href = '/posts/new';" id="new_post" type="button" class="btn btn-default">Post</button>
+		</div>
+		<div class="col-offset-9 col-sm-1">
+			<p id="list_p">List</p>
+		</div>
+	</div>
 	<%= yield %>
 </div>
 

@@ -19,5 +19,5 @@ class Poster.Routers.Posts extends Backbone.Router
 		$('#index_container').html(view.render().el)
 
 	new: ->
-		view = new Poster.Views.PostsNew()
+		view = new Poster.Views.PostsNew(collection: @collection)
 		$('#index_container').html(view.render().el)

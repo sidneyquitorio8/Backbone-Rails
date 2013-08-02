@@ -1,13 +1,6 @@
-	<div id="menu_bar" class="row">
-		<div class="col-sm-2">
-			<button id="new_post" type="button" class="btn btn-default">Post</button>
-		</div>
-		<div class="col-offset-9 col-sm-1">
-			<p id="list_p">List</p>
-		</div>
-	</div>
-
 <p> Hellloooo isss it mee yooour looking for </p>
-<ul id="posts_container">
+<div id="index_container">
+	<ul id="posts_container">
 
-</ul>
+	</ul>
+</div>

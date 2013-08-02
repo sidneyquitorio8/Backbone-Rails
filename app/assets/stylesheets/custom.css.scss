@@ -5,6 +5,7 @@
 	padding-bottom: 30px;
 	#list_p { color: white; padding-top: 7px; font-size: 17px;}
 	#new_post_message { height: 60px; width: 600px;}
+	ul#posts_container { padding-left:0;}
 }
 
 #menu_bar {
@@ -16,7 +17,18 @@
 
 .page_container {
 	background-color: #eeeeee;
-	height: 150px;
-	width: 1000px;
 	border-radius: 10px;
 }
+
+.post_div {
+	background-color: #eeeeee;
+	height: 35px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#new_post_form {
+	padding: 10px;
+}
+
