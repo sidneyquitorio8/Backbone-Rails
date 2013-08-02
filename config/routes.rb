@@ -17,7 +17,10 @@ Poster::Application.routes.draw do
     resources :posts
   end
 
+  match '/landing' => 'main#landing'
+  match '/user/sign_out' => 'sessions#destroy'
   match '/auth/twitter/callback' => 'sessions#create'
+  match '*path', to: 'main#index'
 
   # Sample resource route with options:
   #   resources :products do

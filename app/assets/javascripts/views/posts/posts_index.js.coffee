@@ -3,7 +3,7 @@ class Poster.Views.PostsIndex extends Backbone.View
   template: JST['posts/index']
 
   events:
-  	'submit #new_post': 'createPost'
+  	'click #new_post': 'createPost'
 
   initialize: ->
     @collection.on('reset', @render, this)
@@ -15,11 +15,12 @@ class Poster.Views.PostsIndex extends Backbone.View
   	this
 
   createPost: (event) ->
-  	event.preventDefault()
-  	if $('#new_post_title').val() == '' || $('#new_post_message').val() == '' 
-  		alert "Please fill out form"
-  	else @collection.create(title: $('#new_post_title').val(), message: $('#new_post_message').val())
-  	$('#new_post')[0].reset()
+  	# event.preventDefault()
+  	# if $('#new_post_title').val() == '' || $('#new_post_message').val() == '' 
+  	# 	alert "Please fill out form"
+  	# else @collection.create(title: $('#new_post_title').val(), message: $('#new_post_message').val())
+  	# $('#new_post')[0].reset()
+    Backbone.history.navigate("/posts/new", true)
 
   appendEntry: (post) ->
   	view = new Poster.Views.Post(model: post)

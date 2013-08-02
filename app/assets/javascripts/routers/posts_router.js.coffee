@@ -1,6 +1,8 @@
 class Poster.Routers.Posts extends Backbone.Router
 	routes:
+		'posts':'index'
 		'':'index'
+		'posts/new': 'new'
 		'posts/:id': 'show'
 
 	initialize: ->
@@ -13,4 +15,9 @@ class Poster.Routers.Posts extends Backbone.Router
 		$('#index_container').html(view.render().el)
 
 	show: (id) ->
-		alert "#{id}"
+		view = new Poster.Views.PostsShow()
+		$('#index_container').html(view.render().el)
+
+	new: ->
+		view = new Poster.Views.PostsNew()
+		$('#index_container').html(view.render().el)

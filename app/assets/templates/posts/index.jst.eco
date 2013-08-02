@@ -1,8 +1,11 @@
-<form id="new_post">
-	<input type="text" name="title" id="new_post_title">
-	<input type="text_area" name="message" id="new_post_message">
-	<input type="submit" value="Add">
-</form>
+	<div id="menu_bar" class="jumbotron menu_bar row">
+		<div class="col-sm-2">
+			<button id="new_post" type="button" class="btn btn-default">Post</button>
+		</div>
+		<div class="col-offset-8 col-sm-2">
+			List
+		</div>
+	</div>
 
 <p> Hellloooo isss it mee yooour looking for </p>
 <ul id="posts_container">

@@ -7,11 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="navigation">
-	<%= link_to "Sign in", "/auth/twitter" %>
+<div class='navbar navbar-fixed-top'>
+	<div class="container">
+		<% if current_user %>
+			<div class="navbar-brand"> <%= link_to "Hello #{current_user.login}", root_path %> </div>
+			<a class="navbar-brand pull-right" href="/user/sign_out"> | Logout </a>
+		<% else %>
+			<a class="navbar-brand pull-right" href="/auth/twitter"> | Login </a>
+		<% end %>
+	</div>
 </div>
 
-<%= yield %>
+<div id="whole_container">
+	<%= yield %>
+</div>
 
 </body>
 </html>

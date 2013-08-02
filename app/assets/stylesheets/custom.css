@@ -1,0 +1,11 @@
+#whole_container {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+#menu_bar {
+	height: 30px;
+	line-height: 30px;
+}
