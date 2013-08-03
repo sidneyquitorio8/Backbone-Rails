@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 	end
 
 	def destroy
-		respond_with Entry.destroy(params[:id])
+		respond_with Post.destroy(params[:id])
 	end
 
 end

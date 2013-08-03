@@ -3,6 +3,7 @@ class Poster.Routers.Posts extends Backbone.Router
 		'posts':'index'
 		'':'index'
 		'posts/new': 'new'
+		'posts/:id/edit': 'edit'
 		'posts/:id': 'show'
 
 	initialize: ->
@@ -14,10 +15,24 @@ class Poster.Routers.Posts extends Backbone.Router
 		view = new Poster.Views.PostsIndex(collection: @collection)
 		$('#index_container').html(view.render().el)
 
-	show: (id) ->
-		view = new Poster.Views.PostsShow()
-		$('#index_container').html(view.render().el)
-
 	new: ->
 		view = new Poster.Views.PostsNew(collection: @collection)
 		$('#index_container').html(view.render().el)
+
+	edit: (id) ->
+		c = @collection
+		c.fetch({
+			success: ->
+		        post = c.get(id)
+        		view = new Poster.Views.PostsEdit(model: post)
+        		$('#index_container').html(view.render().el)
+			})
+
+	show: (id) ->
+		c = @collection
+		c.fetch({
+			success: ->
+		        post = c.get(id)
+        		view = new Poster.Views.PostsShow(model: post)
+        		$('#index_container').html(view.render().el)
+			})

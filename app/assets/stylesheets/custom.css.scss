@@ -28,7 +28,13 @@
 	border-radius: 5px;
 }
 
-#new_post_form {
+.posts_form {
 	padding: 10px;
+}
+
+#show_content {
+	h3 { margin-top: 0px; margin-bottom: 0px; padding-top: 15px; padding-left: 15px; padding-right: 15px; padding-bottom: 5px;}
+	small { padding: 15px;}
+	p { padding-top: 30px; padding: 15px;}
 }
 

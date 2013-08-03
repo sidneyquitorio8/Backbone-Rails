@@ -1,9 +1,11 @@
 class Poster.Models.Post extends Backbone.Model
 
 	getUser: ->
-		$.ajax 'http://localhost:3000/api/users/show/:id',
+		$.ajax '/api/users/show/:id',
     		type: 'GET'
     		dataType: 'json'
     		data: {id: 1},
     		success: (response) ->
-        		console.log(response)
+    			response = JSON.parse response
+    			alert "Hey"
+    		complete: (response, textStatus) ->

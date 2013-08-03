@@ -1,1 +1,8 @@
-<%= @post %>
+<div class="page_container">
+	<div id="show_content">
+		<h3><%= @post.get('title') %></h3>
+		<small> Posted by: </small>
+		<p> <%= @post.get('message') %> </p>
+		<button class="edit_button btn btn-default col-sm-2 col-offset-10">Edit</button>
+	</div>
+</div>
