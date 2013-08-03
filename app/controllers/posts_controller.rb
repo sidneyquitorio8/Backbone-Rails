@@ -21,5 +21,4 @@ class PostsController < ApplicationController
 		respond_with Entry.destroy(params[:id])
 	end
 
-
 end

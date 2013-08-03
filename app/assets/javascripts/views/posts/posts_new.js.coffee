@@ -14,4 +14,4 @@ class Poster.Views.PostsNew extends Backbone.View
   		alert "Please fill out form"
   		$('#new_post_title').val("")
   		$('#exampleInputPassword').val("")
-  	else @collection.create(title: $('#new_post_title').val(), message: $('#exampleInputPassword').val()); $('#new_post_title').val(""); $('#exampleInputPassword').val(""); Backbone.history.navigate("/posts", true)
+  	else @collection.create({user_id: $('#current_user').data('user-id') , title: $('#new_post_title').val(), message: $('#exampleInputPassword').val()}); $('#new_post_title').val(""); $('#exampleInputPassword').val(""); Backbone.history.navigate("/posts", true)

@@ -17,6 +17,7 @@ Poster::Application.routes.draw do
     resources :posts
   end
 
+  match '/api/users/:id' => 'users#show'
   match '/landing' => 'main#landing'
   match '/user/sign_out' => 'sessions#destroy'
   match '/auth/twitter/callback' => 'sessions#create'
